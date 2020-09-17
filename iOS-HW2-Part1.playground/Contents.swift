@@ -1,8 +1,24 @@
 
 import UIKit
-
-
-
+var height = 1.68
+var weight = 60.2
+func calcBMI(height:Double, weight:Double){
+    var BMI = weight/(height*height)
+if BMI <= 18.5{
+print("ضعيف")
+}
+else if BMI <= 30.0{
+    print("وزن طبيعي")
+}
+else if BMI <= 30.1{
+    print("سمنه خفيفه")
+}
+else if BMI <= 40.0{
+    print("سمنه مفرطة")
+}
+}
+calcBMI(height: height, weight: weight)
+    
 //: # 1️⃣ السؤال الاول
 /*:
 
@@ -51,4 +67,13 @@ import UIKit
   #
  و اذا كان فوق ١٨ سوف يتم طباعة نص بأن المتقدم يُسمح له بإمتلاك رخصة قيادة
 */
-
+var name = "sherifa"
+var age = 17
+func info(name: String, age: Int){
+if age <= 18{
+    print("لم يكمل العمر المطلوب")
+}
+else if age >= 18{
+    print("يسمح بامتلاك رخصة قيادة")
+}
+}
